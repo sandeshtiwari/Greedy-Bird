@@ -98,7 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bird: {fileID: 0}
-  jumpStrength: 18
+  jumpStrength: 10
+  gravityStrengthIncreaseRate: 0.1
+  jumpStrengthIncreaseRate: 0.5
 --- !u!58 &6876537526393295571
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -130,7 +132,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2.5
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1

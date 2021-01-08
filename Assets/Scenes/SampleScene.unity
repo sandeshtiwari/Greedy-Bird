@@ -549,17 +549,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6623689808266946288, guid: 82d1a408e7b4084489443d8a6235ac1f, type: 3}
-      propertyPath: jumpStrength
-      value: 10
-      objectReference: {fileID: 0}
     - target: {fileID: 7093912931392466854, guid: 82d1a408e7b4084489443d8a6235ac1f, type: 3}
       propertyPath: m_Name
       value: Bird
-      objectReference: {fileID: 0}
-    - target: {fileID: 8673677010915608014, guid: 82d1a408e7b4084489443d8a6235ac1f, type: 3}
-      propertyPath: m_GravityScale
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 82d1a408e7b4084489443d8a6235ac1f, type: 3}
