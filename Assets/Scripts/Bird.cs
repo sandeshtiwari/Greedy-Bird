@@ -10,6 +10,7 @@ public class Bird : MonoBehaviour
     [SerializeField] float jumpStrengthIncreaseRate = 0.5f;
     [SerializeField] float xLeftPadding = -8f;
     float paddingFactor = 100f;
+    bool gameOverScreen = true;
     int score;
     // Start is called before the first frame update
     void Start()
@@ -22,7 +23,7 @@ public class Bird : MonoBehaviour
     void Update()
     {
         //transform.position = Camera.main.ScreenToViewportPoint(new Vector2(xLeftPadding * paddingFactor, 1));
-        if (Input.GetButtonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1") && gameOverScreen)
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, jumpStrength);
         }
@@ -47,5 +48,10 @@ public class Bird : MonoBehaviour
     public int GetScore()
     {
         return score;
+    }
+
+    public void SetGameOver(bool gameOver)
+    {
+        gameOverScreen = gameOver;
     }
 }

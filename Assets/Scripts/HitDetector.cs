@@ -8,5 +8,9 @@ public class HitDetector : MonoBehaviour
     {
         // Game Over
         Debug.Log("\nGame Over\n");
+        FindObjectOfType<Level>().LoadGameOver();
+        // freeze player
+        Bird bird = FindObjectOfType<Bird>();
+        bird.SetGameOver(true);
     }
 }
