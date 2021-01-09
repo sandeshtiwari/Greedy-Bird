@@ -99,8 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bird: {fileID: 0}
   jumpStrength: 10
-  gravityStrengthIncreaseRate: 0.1
-  jumpStrengthIncreaseRate: 0.5
+  gravityStrengthIncreaseRate: 0.05
+  jumpStrengthIncreaseRate: 0.05
 --- !u!58 &6876537526393295571
 CircleCollider2D:
   m_ObjectHideFlags: 0

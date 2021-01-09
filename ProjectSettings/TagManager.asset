@@ -44,3 +44,6 @@ TagManager:
   - name: Coin
     uniqueID: 1004571975
     locked: 0
+  - name: Bird
+    uniqueID: 3031649447
+    locked: 0

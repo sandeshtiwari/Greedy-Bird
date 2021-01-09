@@ -134,7 +134,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 662e63c45a72a6e4894cf0521952f0b0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocityIncreaseRate: 0.0005
-  velocity: 0.01
-  xPosPadding: 10
-  yPosInnerPadding: 4
+  velocityIncreaseRate: 0.000005
+  velocity: 0.5
+  xPosPadding: 6
+  yPosInnerPadding: 10
