@@ -137,4 +137,4 @@ MonoBehaviour:
   velocityIncreaseRate: 0.000005
   velocity: 0.5
   xPosPadding: 6
-  yPosInnerPadding: 10
+  yPosInnerPadding: 15

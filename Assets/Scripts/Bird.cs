@@ -29,6 +29,10 @@ public class Bird : MonoBehaviour
         {
             gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, jumpStrength);
         }
+        if(Input.touchCount > 0)
+        {
+            gameObject.GetComponent<Rigidbody2D>().velocity = new Vector2(0, jumpStrength);
+        }
     }
 
     

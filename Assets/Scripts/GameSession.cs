@@ -38,6 +38,9 @@ public class GameSession : MonoBehaviour
 
     public void ResetGame()
     {
+        //gameObject.GetComponent<GameSession>().score = 0;
         Destroy(gameObject);
+        //score = 0;
+        //Debug.Log(score);
     }
 }

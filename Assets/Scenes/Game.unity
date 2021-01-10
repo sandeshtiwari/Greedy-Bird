@@ -886,6 +886,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: coin
       objectReference: {fileID: 0}
+    - target: {fileID: 7033988980329997242, guid: af1b50b1d76256b4e81d7778c344db04, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: c669f79205d6d654a90b42a796cd7b7d, type: 3}
+    - target: {fileID: 7033988980329997242, guid: af1b50b1d76256b4e81d7778c344db04, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7033988980329997243, guid: af1b50b1d76256b4e81d7778c344db04, type: 3}
       propertyPath: m_RootOrder
       value: 5
