@@ -6,17 +6,21 @@ using UnityEngine.UI;
 public class ScoreDisplay : MonoBehaviour
 {
     Text scoreText;
-    Bird birdObject;
+    GameSession gameSession;
     // Start is called before the first frame update
     void Start()
     {
         scoreText = GetComponent<Text>();
-        birdObject = FindObjectOfType<Bird>();
+        //gameSession = FindObjectOfType<GameSession>();
+        //Debug.Log("HERE "+gameSession.GetScore());
     }
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = birdObject.GetScore().ToString();
+        gameSession = FindObjectOfType<GameSession>();
+        scoreText.text = gameSession.GetScore().ToString();
     }
+
+    
 }

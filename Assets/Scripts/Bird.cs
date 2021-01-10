@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,11 +12,12 @@ public class Bird : MonoBehaviour
     [SerializeField] float xLeftPadding = -8f;
     float paddingFactor = 100f;
     bool gameOverScreen = true;
-    int score;
+
+    
+
     // Start is called before the first frame update
     void Start()
     {
-        score = 0;
         transform.position = Camera.main.ScreenToViewportPoint(new Vector2(xLeftPadding * paddingFactor, Screen.height));
     }
 
@@ -29,11 +31,7 @@ public class Bird : MonoBehaviour
         }
     }
 
-    public void IncreaseScore()
-    {
-        score++;
-        //Debug.Log("Current Score "+score);
-    }
+    
 
     public void IncreaseGravity()
     {
@@ -45,10 +43,7 @@ public class Bird : MonoBehaviour
         gameObject.GetComponent<Bird>().jumpStrength += jumpStrengthIncreaseRate;
     }
 
-    public int GetScore()
-    {
-        return score;
-    }
+    
 
     public void SetGameOver(bool gameOver)
     {

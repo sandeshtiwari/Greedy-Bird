@@ -35,7 +35,7 @@ public class Coin : MonoBehaviour
         if (other.GetComponent<Bird>())
         {
             Bird bird = other.GetComponent<Bird>();
-            bird.IncreaseScore();
+            FindObjectOfType<GameSession>().IncreaseScore();
             bird.IncreaseGravity();
             bird.IncreaseJumpStrength();
         }
